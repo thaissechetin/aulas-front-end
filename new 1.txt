@@ -1,0 +1,73 @@
+Arquitetura da Informação 
+
+ - AI    - pADRÕES DE ORIENTAÇÃO PARA O USUÁRIO ATRAVÉS DE UM ORGANIZAÇÃO DA INFO QUE COMPOEM UMA INTERFACE
+ - P/FACILITAR NA NAVEGAÇÃO
+ ARQUITTEO DA INFORMAÇÃO = ORGANIZA  AINFORMAÇÃO P QUE SITE SE TORNE MAIS FACIL DE SER ENTENDIDO E ACESSÍVEL 
+ 
+ - CONTEXTO, CONTEÚDO, PÚBLICO ALVO
+ 
+ ACESSIBLIDADE DO MENU - ESPAÇAMENTO LARGO -
+ 
+ 
+ acessibilidade.net ( PESQUISAR)
+ MOVIMETNO WEB PARA TODOS  (PESQUISAR)
+ LOJA INTEGRADA (PESQUISAR, LOJA DO SITE DOS STONES)
+ 
+ para baixar o photoshop dosenac em casa 
+ 
+ 1 - entrar no site do senac 
+ 2- area exclusiva
+ 3- beneficios e softwares
+ 4-adobe criative cloud 
+ 
+ 
+ https://www.remove.bg/pt-br/upload remover fundo
+ 
+ 72 é  valor mais comum de resolução , mas pode ser alterado
+ corel draw, illustrator para midia impressa, o ideal é 300 de resolução
+ 
+ png = ótimo, mas pesado, e qdo o arquivo exige transparencia 
+ jpeg = mais em conta, uma qualidade pode ser menor, mas é ajustável
+ 
+ banco de imagens direitos free
+ pixabay
+ unsplash
+ 
+ 
+23/02
+sites:
+www.w3c.br
+www.maujor.com
+www.tableless.com
+
+
+tag < > marcação geral, passa informações para o conteúdo
+atributo " " passa informações adicionais 
+
+Editores de código:
+- Vs code
+-Notepad ++
+-Brackets
+-Sublime Text
+-Atom
+-Adobe Dreamweaver
+
+metas: 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> para a página poder roldar em internet explorer 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> pré -requisito pré- confoguração) para design responsivo ( embora seja tópico de CSS
+ 
+lorem+ numero de palavras = o parágrafo + o numero de palavras que vc quer colocar
+
+p>lorem = o parágrafo e a lorem dentro 
+
+MDN - Mozilla Developer Network
+https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element
+
+Tableless - Guia de Iniciantes
+https://tableless.github.io/iniciantes/manual/html/
+
+Validação de código
+https://validator.w3.org/
+
+08/03: 
+Estudar: elementos inline e elementos block

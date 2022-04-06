@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+#exemplo{ /* PAI  */
+    border: solid 2px rgb(0, 255, 42);
+    width: 70%;
+    height: 200px;
+    margin: auto;
+    display: flex; /* habilita o flexbox, o que tiver lá dentro fica lado a lado*/
+    justify-content: space-around; /* permite aumentar o espaço de forma prática, coloca espaço ao redor dos elementos. */
+    /* justify-content: space-evenly;  estaços de tamanho igual*/
+  /* justify-content: space-between;  espaços entre eles */
+    align-items: center;
+    
+    flex-wrap: wrap; /* sem o flex wrap, os conetúdos vão ficando cada vez mais espremidos */
+    
+} 
+
+.caixas {
+    width: 100px;
+    height: 50px;
+    background-color: rgba(63, 216, 216, 0.795);
+    border: solid 1px black;
+    margin-top: 5px; /* deixa um espaço de baixo entre a caixa maior e as menores na parte superiror. */
+    padding-top: 10px;
+
+}   
+
+#um {
+    background-color: orangered;
+    width: 150px;
+}
+
+#dois {
+    background-color: orange;
+    width: 150px;
+}
+
+
+</style>
+</head>
+<body>
+    <h1>Alinhamento de elementos e conteúdo com Flexbox</h1>
+    <hr>
+    <p>Flexbox é um mecanismo CSS3 que permite aplicar alinhamento, espaçamento e distribuição de elementos no HTML.</p>
+
+    <h2>Exemplo</h2>
+
+    <div id="exemplo">
+        <div class="caixas" id="um">UM</div>
+        <div class="caixas" id="dois">DOIS</div>
+        <div class="caixas">TRÊS</div>
+
+        <div class="caixas">QUATRO</div>
+        <div class="caixas">CINCO</div>
+        <div class="caixas">SEIS</div>
+
+
+    </div>
+
+    
+
+</body>
+</html>

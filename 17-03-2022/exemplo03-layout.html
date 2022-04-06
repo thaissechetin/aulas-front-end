@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout</title>
+<style>
+
+/* REGRAS DE USO GERAL  - O QUE CODIFICAMOS AQUI, É TUDO O QUE SERÁ USADO NO SITE NÃO IMPORTANDO MUITO O TAMANHO DA TELA.NESTE MOMENTO, NÃO USAMOS MEDIA QUERIES. */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+html { font-size: 15px; }
+
+#container {
+    box-shadow: black;
+    padding: 5px;
+}
+
+header {
+    background-color: aquamarine;
+    text-align: center;
+    height: 100px;
+}
+
+/* CSS RESET:LIMPA OU MODIFICA ALGUMA PROPRIEDADES, GERALMENTE QUE JÁ TEM ESPAÇAMENTO PRÓPRIO */
+/* *{
+    margin: 0%;
+    padding: 0%; 
+    }  - quando eu quiser tirar o espaçamento geral, de tudo, a gente usa o "*"  */
+
+body, h1, h2, p {
+    margin: 0%;
+    padding: 0%;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.2rem; }
+p  { font-size: 1.1rem; }
+
+nav  {background-color: rgba(137, 43, 226, 0.562); }
+
+article { padding: 5px; }
+
+#coluna-um { background-color: royalblue; }
+#coluna-dois { background-color: pink; }
+#coluna-tres { background-color: darkgray; }
+
+footer {
+    background-color: darkmagenta;
+}
+
+
+/* REGRAS PARA DESIGN RESPONSIVO  */
+
+/* 1ª MEDIA QUERY: TELAS A PARTIR DE 700PX DE LARGURA */
+@media screen and (min-width: 700px) {
+    html { font-size: 18px; }  
+
+    header { display: flex;
+            justify-content: space-between; 
+            align-items: center; }
+
+    nav { width: 35%; }
+
+    main{ /* FLEX CONTAINER */
+        display: flex;
+        flex-wrap: wrap; /* permite a quebra no fluxo */
+        /* flex-direction - muda a ordem  */
+        /* justify-content: trabalha a distribuição de espaço. Nesta caso, não tem como usá-lo pois já está tudo justo, 50 por cento em cada um  */
+    }
+
+    #coluna-um, #coluna-dois { width: 50%; } 
+}
+
+/* EXERCÍCIO: crie uma nova media - query para telas a partir de 822px, que faça as seguintes alterções:
+- Tamanho geral de fonte: 20px           -----ok 
+- largura das colunas: 33.33%            -----ok
+-limite o tamanho máximo da container para até 1200px e também centralize   --------- ok */  
+
+@media screen and (min-width: 822px) {
+    html {font-size: 20px; }
+
+    #coluna-um, #coluna-dois, #coluna-tres { width: 33.33%; }
+
+    /* ou podemos usar o seletor de article, já que só há 3 articles no html e vamos modificar todos. Ficaria assim:*/
+
+    /* article { width: 33.33%; }  
+    
+    porém há uma ordem de prcedencia no css a se considerar: 1- id. 2-classe 3 tag
+    nesse caso, como há id, que precede a tag , a funcionalidade não valerá*/
+
+    #container { max-width: 1200px; margin: auto; }
+     
+}
+
+</style>
+</head>
+<body>
+    
+    <div id="container">
+        <!-- Vamos criar um layout responsivo do zero -->
+        <!-- cabeçalho -->
+        <header>
+            <h1>Site XYZ</h1>
+            <nav>
+                <a href="">Link 1</a>
+                <a href="">Link 2</a>
+                <a href="">Link 3</a>
+            </nav>
+        </header>
+        <!-- conteúdo -->
+        <main>
+            <article id="coluna-um">
+                <h2>UM</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, similique natus omnis error aut accusantium ullam inventore doloremque amet. Exercitationem quas voluptatem quis esse quisquam tempora adipisci delectus optio odio alias. Voluptates dicta corporis, excepturi voluptatum ut iure! Explicabo sit mollitia provident, nemo libero esse? Error facilis accusantium aliquam voluptatum.</p>
+            </article>
+
+            <article id="coluna-dois">
+                <h2>DOIS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corporis provident explicabo itaque beatae saepe commodi ipsum soluta aperiam in a aut aspernatur, minus ab perferendis delectus sapiente non! Qui quibusdam magnam ut labore. Iusto doloribus nostrum assumenda repellendus, vel ducimus, consequuntur pariatur maxime maiores vitae ipsum sequi harum! Asperiores.</p>
+            </article>
+        
+            <article id="coluna-tres">
+                <H2>TRÊS</H2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa pariatur iusto porro ab ipsam eligendi officiis molestias quam. Reiciendis culpa fugit atque quae unde quod? Assumenda dolores eveniet minus, repellendus vitae in maiores dolorem suscipit sint possimus ipsum ad, porro ab a aspernatur esse quas qui veritatis deserunt nobis nisi.</p>
+            </article>
+        </main>
+        <!-- rodapé -->
+        <footer>
+            <P>layout de exemplo 2022 - Todos os direitos reservados </P>
+        </footer>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Imagens</title>
+</head>
+<body>
+
+    <p><a href="links.html">Voltar para a página de links</a></p>
+    <h1>Trabalhando com imagens</h1>  
+    <hr> 
+    <p>Formatos mais comuns para a web:</p> <!--Atalho para criar uma lista não ordenada com 4 ítens: 
+    ul>li*4-->
+    <ul>
+        <li>JPEG</li>
+        <li>PNG</li>
+        <li>GIF</li>
+        <li>SVG</li>
+    </ul>
+
+    <h2>Exemplos:</h2>
+
+    <!-- 
+        TAG <img>
+        Atributos: src = "" (uma abreviatura para source, que significa fonte, origem, o caminho para a imagem)
+         e o alt="" (alternative text, texto alternativo - pequena descrição que indique o que está na imagem)
+     -->
+     <img src="imagens/pink-floyd.jpg" alt="Os quatro integrantes da banda pink floyd no palco acenando para o público">
+     <hr>
+     <hr>
+
+     <p>Podemos colocar imagem com legendas utilizando a tag figure e figcapture. Assim:</p>
+     
+
+     <figure>
+         <img src="imagens/stonehenge.jpg" alt="Ruínas do Stonehedge e pôr do sol.">
+         <figcaption>Obervando a beleza das ruínas em um pôr-do-sol. Viagem inesquecivel!</figcaption>
+     </figure>
+
+     <p>O local da legenda depende de onde está localizado a tag figcaption. Veja abaixo:</p>
+     
+
+     <figure>
+         <figcaption> Tecnologias do mundo front end</figcaption>
+         <img src="imagens/logo-html5.png" alt="loho html">
+         <img src="imagens/logo-css3.gif" alt="logo css">
+         <img src="imagens/logo-javascript.gif" alt="logo javascript">
+         <figcaption>Note que nesse caso, a figcaption e a legenda se aparecem em cima das imagens.</figcaption>
+     </figure>
+ <hr>
+
+     <p>Para que as imagens fiquem sempre uma em cima da outra: separa-se em parágrafos </p>
+     
+     <figure>
+        <figcaption> Tecnologias do mundo front end</figcaption>
+        <p><img src="imagens/logo-html5.png" alt="loho html"></p>
+
+        <p><img src="imagens/logo-css3.gif" alt="logo css"> </p>
+
+        <p><img src="imagens/logo-javascript.gif" alt="logo javascript"></p>
+        <hr>
+
+       <h2>GIF animado:</h2>
+
+        <img src="imagens/computer.gif" alt="boneco batendo a cabeça no teclado do computador.">
+
+        <h2>Bitmap:</h2>
+
+        <img src="imagens/black-cat.png" alt="gato preto e cinza escuro com os olhos amarelos">
+
+        <h2>Vetor</h2>
+
+        <img src="imagens/black-cat.svg" alt="gato preto e cinza claro com os olhos amarelos">
+
+     
+
+
+
+
+
+     
+     
+
+</body>
+</html>
